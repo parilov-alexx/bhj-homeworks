@@ -6,6 +6,7 @@ function countdown () {
         i--;
         timerData.textContent = i;
     } else {
+        clearInterval();
         alert("Вы победили в конкурсе!")
     }
 }

@@ -6,15 +6,7 @@ let start = 0
 
 image.onclick = () => {
 
-	if (clickerNumber % 2 == 0) {
-		clickerNumber++;
-		image.width = 400;
-		clicker.textContent = clickerNumber;
-	} else {
-		clickerNumber++;
-		image.width = 200;
-		clicker.textContent = clickerNumber;
-	}
+	image.width = ++clicker.textContent % 2 ? 250 : 200;
 	let end = Date.now();
 	let timeDif = end - start;
 	let clickSpeed = 1 / (timeDif / 1000);

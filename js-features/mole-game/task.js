@@ -9,19 +9,19 @@ for (let index = 1; index < 10; index++) {
 			deadMolesNumber++;
 			deadMoles.textContent = deadMolesNumber
 		} else if (+deadMoles.textContent > 8) {
-			alert("Победа!");
-			deadMoles.textContent = "0";
-			lostClick.textContent = "0";
+			alertMessage("Победа!");
 		} else if (+lostClick.textContent < 4) {
 			let lostClickNumber = +lostClick.textContent;
 			lostClickNumber++;
 			lostClick.textContent = lostClickNumber
 		} else if (+lostClick.textContent > 3) {
-			alert("Вы проиграли!");
+			alertMessage("Вы проиграли :-(");
+		}
+		function alertMessage(message) {
+			alert(message);
 			deadMoles.textContent = "0";
 			lostClick.textContent = "0";
 		}
-
 	}
 }
 
