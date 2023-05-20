@@ -6,10 +6,10 @@ function countdown () {
         i--;
         timerData.textContent = i;
     } else {
-        clearInterval();
+        clearInterval(timerId);
         alert("Вы победили в конкурсе!")
     }
 }
 
-setInterval(countdown, 1000)
+let timerId = setInterval(countdown, 1000)
 

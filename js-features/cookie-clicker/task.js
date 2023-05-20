@@ -14,6 +14,3 @@ image.onclick = () => {
 	start = end;
 }
 
-
-
-
