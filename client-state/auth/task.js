@@ -65,6 +65,7 @@ signoutButton.addEventListener('click', () => {
 
 if (localStorage.userId !== undefined) {
   userId.innerText = localStorage.userId;
-  welcomeMessage.classList.add('welcome_active');  
+  welcomeMessage.classList.add('welcome_active');
+  signin.classList.remove('signin_active');  
 } else
   signin.classList.add('signin_active');    
